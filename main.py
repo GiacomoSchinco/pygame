@@ -1,16 +1,13 @@
-# This is a sample Python script.
+import pygame
 
-# Press Maiusc+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+pygame.init()
 
+sfondo = pygame.image.load('img/sfondo.png')
+uccello = pygame.image.load('img/uccello.png')
+base = pygame.image.load('img/base.png')
+gameover = pygame.image.load('img/gameover.png')
+tubo_giu = pygame.image.load('img/tubo.png')
+tubo_su = pygame.transform.flip(tubo_giu, False, True)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+SCHERMO = pygame.display.set_mode((288, 512))
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
